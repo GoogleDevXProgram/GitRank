@@ -13,20 +13,12 @@ object DependencyVersions {
 
     val indicatorVersion = "1.2.0"
 
-    val firebaseFirestoreVersion = "22.0.2"
-    val firebaseAuthVersion = "22.0.2"
-    val coroutinesPlayServicesVersion = "1.1.1"
-
     val glideVersion = "4.11.0"
     val androidRoomVersion = "2.2.6"
     val navVersion = "2.3.0"
 
     val hiltVersion = "2.31.2-alpha"
     val daggerHiltLifecycleViewmodelVersion = "1.0.0-alpha03"
-
-    val materialSearchViewVersion = "1.4.0"
-
-    val calenderviewVersion = "0.4.2"
 
 
     val coroutineAndroid = "1.4.1"
@@ -39,11 +31,8 @@ object DependencyVersions {
     val lifecycleextentionVersion = "2.2.0"
     val lifecycleViewmodel = "2.2.0"
 
-    const val firebaseCrashlyticsVersion = "17.4.0"
-    const val firebaseAnalyticsVersion = "18.0.2"
 
     const val timberVersion = "4.7.1"
 
-    const val rxJavaRoomVersion = "2.2.2"
 
 }

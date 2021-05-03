@@ -51,7 +51,6 @@ android {
 dependencies {
 
     implementation(kotlinDependencies.legacySupportV4)
-//    implementation(androidxsupportDependencies.constraintLayout)
     implementation(kotlinDependencies.lifecycleExtention)
     implementation(kotlinDependencies.lifecycleViewmodel)
     implementation(kotlinDependencies.kotlin)
@@ -101,13 +100,6 @@ dependencies {
     implementation(IndicatorDependency.indicator)
 
 
-    //observe view changes
-    implementation(rxBindingDependencies.rxbinding)
-    implementation(rxBindingDependencies.rxBindingSupportv4)
-    implementation(rxBindingDependencies.rxJavaForRoom)
-
-
-
     implementation(AndroidXDependencies.viewpager2)
 
     implementation(AndroidXDependencies.appCompat)
@@ -115,12 +107,10 @@ dependencies {
     implementation(AndroidXDependencies.constraintLayout)
 
     implementation(RetrofitDependencies.retrofit)
-    implementation(RetrofitDependencies.retrofitRxJavaAdapter)
     implementation(RetrofitDependencies.retrofitGsonConverter)
     implementation(RetrofitDependencies.retrofitLoggingInterceptor)
-    implementation(MaterialSearchView.materialSearchView)
 
 
-    implementation(TimerDependency.timber)
+    implementation(TimberDependency.timber)
 
 }

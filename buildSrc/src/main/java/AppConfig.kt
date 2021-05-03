@@ -39,16 +39,9 @@ object coroutineDependencies {
 
 object RetrofitDependencies {
     val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
-    val retrofitRxJavaAdapter = "com.squareup.retrofit2:adapter-rxjava2:2.8.1"
     val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:2.9.0"
     val retrofitLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:4.9.0"
 
-}
-
-object MaterialSearchView {
-
-    val materialSearchView =
-        "com.miguelcatalan:materialsearchview:${DependencyVersions.materialSearchViewVersion}"
 }
 
 
@@ -103,14 +96,6 @@ object IndicatorDependency {
     val indicator = "com.github.zhpanvip:viewpagerindicator:${DependencyVersions.indicatorVersion}"
 }
 
-object FireBaseDependency {
-
-    val firebaseCrashlytics =
-        "com.google.firebase:firebase-crashlytics-ktx:${DependencyVersions.firebaseCrashlyticsVersion}"
-    val firebaseAnalytics =
-        "com.google.firebase:firebase-analytics-ktx:${DependencyVersions.firebaseAnalyticsVersion}"
-}
-
-object TimerDependency {
+object TimberDependency {
     val timber = "com.jakewharton.timber:timber:${DependencyVersions.timberVersion}"
 }
