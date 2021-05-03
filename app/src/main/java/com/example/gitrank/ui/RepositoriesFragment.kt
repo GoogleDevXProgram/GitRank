@@ -12,7 +12,7 @@ import com.example.gitrank.databinding.FragmentRepositoriesBinding
 import com.example.gitrank.databinding.FragmentUsersBinding
 
 
-class Repositories : Fragment() {
+class RepositoriesFragment : Fragment() {
   lateinit var navController: NavController
   lateinit var  repositoriesBinding: FragmentRepositoriesBinding
 

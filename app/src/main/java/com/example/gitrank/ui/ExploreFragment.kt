@@ -8,20 +8,20 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.gitrank.databinding.FragmentUsersBinding
+import com.example.gitrank.databinding.FragmentExploreBinding
 
 
-class Users : Fragment() {
+class ExploreFragment : Fragment() {
   lateinit var navController: NavController
-  lateinit var  usersBinding: FragmentUsersBinding
+  lateinit var  exploreBinding: FragmentExploreBinding
 
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View? {
-    usersBinding = FragmentUsersBinding.inflate(layoutInflater, container, false)
-    return usersBinding.root
+    exploreBinding = FragmentExploreBinding.inflate(layoutInflater, container, false)
+    return exploreBinding.root
   }
 
   override fun onViewCreated(view : View, savedInstanceState : Bundle?){
@@ -32,6 +32,4 @@ class Users : Fragment() {
   override fun onActivityCreated(savedInstanceState: Bundle?) {
     super.onActivityCreated(savedInstanceState)
   }
-
-
 }
