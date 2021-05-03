@@ -51,18 +51,6 @@ object MaterialSearchView {
         "com.miguelcatalan:materialsearchview:${DependencyVersions.materialSearchViewVersion}"
 }
 
-object rxBindingDependencies {
-
-    val rxbinding = "com.jakewharton.rxbinding3:${DependencyVersions.rxBinding}"
-
-    val rxBindingSupportv4 =
-        "com.jakewharton.rxbinding:rxbinding-support-v4:${DependencyVersions.rxbindingsupportV4}"
-
-    val rxJavaForRoom = "androidx.room:room-rxjava2:${DependencyVersions.rxJavaRoomVersion}"
-
-
-}
-
 
 object AndroidXDependencies {
 

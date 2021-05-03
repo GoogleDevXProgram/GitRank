@@ -28,9 +28,6 @@ object DependencyVersions {
 
     val calenderviewVersion = "0.4.2"
 
-    val rxBinding = "rxbinding:3.1.0"
-    val rxbindingsupportV4 = "0.4.0"
-
 
     val coroutineAndroid = "1.4.1"
     val lifecycleLivedata = "2.3.0-rc01"
