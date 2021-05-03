@@ -11,7 +11,7 @@ import androidx.navigation.Navigation
 import com.example.gitrank.databinding.FragmentExploreBinding
 
 
-class Explore : Fragment() {
+class ExploreFragment : Fragment() {
   lateinit var navController: NavController
   lateinit var  exploreBinding: FragmentExploreBinding
 
