@@ -29,7 +29,4 @@ class ExploreFragment : Fragment() {
     navController = Navigation.findNavController(view)
   }
 
-  override fun onActivityCreated(savedInstanceState: Bundle?) {
-    super.onActivityCreated(savedInstanceState)
-  }
 }

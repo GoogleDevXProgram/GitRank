@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Make sure item IDs match navigation resource IDs, when using {NavigationExtensions.kt}
+it took some research to figure this out.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_graph_users"
+        android:icon="@drawable/ic_github"
+        android:title="@string/title_users" />
+
+    <item
+        android:id="@+id/nav_graph_repositories"
+        android:icon="@drawable/ic_repository"
+        android:title="@string/title_repositories" />
+
+    <item
+        android:id="@+id/nav_graph_explore"
+        android:icon="@drawable/ic_baseline_explore_24"
+        android:title="@string/title_explore" />
+
+</menu>

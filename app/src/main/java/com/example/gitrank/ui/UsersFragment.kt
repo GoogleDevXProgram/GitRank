@@ -29,9 +29,4 @@ class UsersFragment : Fragment() {
     navController = Navigation.findNavController(view)
   }
 
-  override fun onActivityCreated(savedInstanceState: Bundle?) {
-    super.onActivityCreated(savedInstanceState)
-  }
-
-
 }
