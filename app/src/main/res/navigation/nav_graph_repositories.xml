@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/repositoriesFragment"
-        android:name="com.example.gitrank.ui.RepositoriesFragment"
+        android:name="com.example.gitrank.ui.fragments.RepositoriesFragment"
         android:label="RepositoriesFragment" />
 </navigation>

@@ -14,7 +14,7 @@ object DependencyVersions {
     val indicatorVersion = "1.2.0"
 
     val glideVersion = "4.11.0"
-    val androidRoomVersion = "2.2.6"
+    val androidRoomVersion = "2.3.0-alpha04"
     val navVersion = "2.3.0"
 
     val hiltVersion = "2.31.2-alpha"

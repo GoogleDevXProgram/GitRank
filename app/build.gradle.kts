@@ -4,6 +4,7 @@ plugins {
     kotlin("android.extensions")
     kotlin("kapt")
     id("kotlin-android")
+    id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("androidx.navigation.safeargs.kotlin")
 
@@ -43,8 +44,9 @@ android {
         jvmTarget = "1.8"
     }
 
-    viewBinding {
-        android.buildFeatures.viewBinding = true
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
     }
 }
 
@@ -86,6 +88,7 @@ dependencies {
 
     //Room Db
     implementation(roomDependencies.runtime)
+
     kapt(roomDependencies.kapt)
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation(roomDependencies.impl)
