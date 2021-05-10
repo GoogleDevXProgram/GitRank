@@ -41,5 +41,15 @@
       <option name="name" value="maven2" />
       <option name="url" value="file:$PROJECT_DIR$/app/url%20'https:/maven.google.com" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="file:/$PROJECT_DIR$/url%20'https:/maven.google.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="file:/$PROJECT_DIR$/app/url%20'https:/maven.google.com" />
+    </remote-repository>
   </component>
 </project>

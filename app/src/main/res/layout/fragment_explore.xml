@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context="com.example.gitrank.ui.ExploreFragment">
+    tools:context="com.example.gitrank.ui.fragments.ExploreFragment">
 
     <TextView
         android:id="@+id/appbar_title"

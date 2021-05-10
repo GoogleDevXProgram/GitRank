@@ -1,4 +1,4 @@
-package com.example.gitrank.ui
+package com.example.gitrank.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,21 +8,20 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.gitrank.databinding.FragmentRepositoriesBinding
-import com.example.gitrank.databinding.FragmentUsersBinding
+import com.example.gitrank.databinding.FragmentExploreBinding
 
 
-class RepositoriesFragment : Fragment() {
+class ExploreFragment : Fragment() {
   lateinit var navController: NavController
-  lateinit var  repositoriesBinding: FragmentRepositoriesBinding
+  lateinit var  exploreBinding: FragmentExploreBinding
 
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View? {
-    repositoriesBinding = FragmentRepositoriesBinding.inflate(layoutInflater, container, false)
-    return repositoriesBinding.root
+    exploreBinding = FragmentExploreBinding.inflate(layoutInflater, container, false)
+    return exploreBinding.root
   }
 
   override fun onViewCreated(view : View, savedInstanceState : Bundle?){

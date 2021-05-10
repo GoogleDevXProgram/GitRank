@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/usersFragment"
-        android:name="com.example.gitrank.ui.UsersFragment"
+        android:name="com.example.gitrank.ui.fragments.TopUsersFragment"
         android:label="UsersFragment" >
     </fragment>
 </navigation>
