@@ -7,7 +7,8 @@
 
         <import type="android.view.View" />
 
-        <variable name="topUser" type="com.example.gitrank.data.entities.TopUsers"/>
+        <variable name="repository"
+            type="com.example.gitrank.data.entities.Repositories"/>
     </data>
 
     <LinearLayout
@@ -15,7 +16,7 @@
         android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_top_users"
+            android:id="@+id/cv_repositories"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -43,32 +44,53 @@
                         android:layout_height="wrap_content"
                         android:padding="4dp"
                         tools:text="10"
-                        android:text="@{topUser.rank}"
+                        android:text="@{repository.rank}"
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/user_profile_avatar"
+                        android:id="@+id/repository_avatar"
                         android:layout_gravity="center"
                         android:layout_marginEnd="8dp"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@{topUser.avatarUrl}"
+                        android:src="@{repository.avatarUrl}"
                         android:contentDescription="user avatar"
                         tools:src="@tools:sample/avatars"
                         android:padding="8dp"
                         />
 
-                    <TextView
-                        android:id="@+id/githubUserName"
-                        android:layout_gravity="center"
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="4dp"
-                        android:ellipsize="end"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="@{topUser.githubUsername}"
-                        tools:text="@tools:sample/first_names" />
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ownerName"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="@{repository.ownerName}"
+                            tools:text="@tools:sample/first_names" />
+
+                        <TextView
+                            android:id="@+id/repositoryName"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:layout_below="@id/ownerName"
+                            android:text="@{repository.repositoryName}"
+                            tools:text="@tools:sample/lorem" />
+                    </RelativeLayout>
 
                 </LinearLayout>
 
@@ -80,21 +102,19 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="8dp">
 
-                    <TextView
-                        android:id="@+id/txt_followers"
+                    <ImageView
+                        android:id="@+id/ic_stars"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/txt_followers"
-                        tools:text="@string/txt_followers"
-                        android:textStyle="bold"
+                        android:src="@drawable/ic_baseline_star_outline_24"
                         android:layout_gravity="center"
                         />
 
                     <TextView
-                        android:id="@+id/userFollowers"
+                        android:id="@+id/repositoryStars"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@{topUser.followers}"
+                        android:text="@{repository.stars}"
                         tools:text="@tools:sample/us_zipcodes"
                         android:layout_gravity="center"
                         />

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">GitRank</string>
-    <string name="title_users">Users</string>
+    <string name="title_users">Top Users</string>
     <string name="title_repositories">Repositories</string>
     <string name="title_explore">Explore</string>
     <string name="txt_followers">Followers</string>

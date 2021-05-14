@@ -27,7 +27,7 @@ class TopUsersAdapter(private val topUsersList: ArrayList<TopUsers>) :
     RecyclerView.ViewHolder(binding.root) {
     fun bind(topUsers: TopUsers) {
       binding.githubUserName.text = topUsers.githubUsername
-      binding.ranking.text = topUsers.id
+      binding.ranking.text = topUsers.rank
       binding.userFollowers.text = topUsers.followers
 
       Glide.with(binding.userProfileAvatar.context)

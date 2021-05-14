@@ -7,7 +7,7 @@ it took some research to figure this out.
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_graph_users"
+        android:id="@+id/nav_graph_top_users"
         android:icon="@drawable/ic_github"
         android:title="@string/title_users" />
 
