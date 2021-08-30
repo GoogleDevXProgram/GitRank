@@ -7,7 +7,7 @@
 
         <import type="android.view.View" />
 
-        <variable name="topUser" type="com.example.gitrank.data.entities.TopUsers"/>
+        <variable name="topUser" type="com.example.gitrank.data.entities.TopUser"/>
     </data>
 
     <LinearLayout
@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:padding="4dp"
                         tools:text="10"
-                        android:text="@{topUser.rank}"
+                        android:text="@{String.valueOf(topUser.id)}"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -67,38 +67,11 @@
                         android:ellipsize="end"
                         android:maxLines="1"
                         android:singleLine="true"
-                        android:text="@{topUser.githubUsername}"
+                        android:text="@{topUser.userName}"
                         tools:text="@tools:sample/first_names" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp">
-
-                    <TextView
-                        android:id="@+id/txt_followers"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/txt_followers"
-                        tools:text="@string/txt_followers"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"
-                        />
-
-                    <TextView
-                        android:id="@+id/userFollowers"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@{topUser.followers}"
-                        tools:text="@tools:sample/us_zipcodes"
-                        android:layout_gravity="center"
-                        />
-                </LinearLayout>
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>

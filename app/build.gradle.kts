@@ -116,4 +116,6 @@ dependencies {
 
     implementation(TimberDependency.timber)
 
+    // Paging 3
+    implementation(PagingDependency.paging3)
 }
