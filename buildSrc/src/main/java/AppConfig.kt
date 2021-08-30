@@ -99,3 +99,6 @@ object IndicatorDependency {
 object TimberDependency {
     val timber = "com.jakewharton.timber:timber:${DependencyVersions.timberVersion}"
 }
+ object PagingDependency {
+     val paging3 = "androidx.paging:paging-runtime:${DependencyVersions.pagingVersion}"
+ }

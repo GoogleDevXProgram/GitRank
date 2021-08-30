@@ -1,6 +1,6 @@
-package com.mikail.mymovie.utils
+package com.example.gitrank.utils
 
 object Constants {
 
-    const val BASE_URL = ""
+    const val GITHUB_API_BASE_URL = "https://api.github.com/"
 }

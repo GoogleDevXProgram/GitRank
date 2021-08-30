@@ -9,7 +9,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.gitrank.databinding.ActivityMainBinding
 import com.example.gitrank.utils.setupWithNavController
 import com.google.android.material.appbar.MaterialToolbar
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var mainBinding: ActivityMainBinding
     private lateinit var toolBar: MaterialToolbar

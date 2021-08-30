@@ -1,16 +1,13 @@
-package com.mikail.mymovie.di
+package com.example.gitrank.di
 
-import android.content.Context
-import androidx.room.Room
 import com.mikail.mymovie.api.ApiHelper
-import com.mikail.mymovie.api.ApiHelperImpl
-import com.mikail.mymovie.api.GitRankApi
-import com.mikail.mymovie.utils.Constants.BASE_URL
+import com.example.gitrank.remote.ApiHelperImpl
+import com.example.gitrank.remote.GitRankApiService
+import com.example.gitrank.utils.Constants.GITHUB_API_BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
-import dagger.hilt.android.qualifiers.ApplicationContext
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -30,7 +27,7 @@ class ApplicationModule {
 
     @Provides
     @Singleton
-    fun provideRetrofit(): GitRankApi {
+    fun provideRetrofit(): GitRankApiService {
 
         val logging = HttpLoggingInterceptor()
         logging.setLevel(HttpLoggingInterceptor.Level.BODY)
@@ -43,10 +40,10 @@ class ApplicationModule {
 
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl(BASE_URL)
+            .baseUrl(GITHUB_API_BASE_URL)
             .client(client)
             .build()
-            .create(GitRankApi::class.java)
+            .create(GitRankApiService::class.java)
     }
 
 

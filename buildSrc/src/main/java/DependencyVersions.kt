@@ -1,7 +1,7 @@
 object DependencyVersions {
 
     val appCompatVersion = "1.2.0"
-    val kotlinVersion = "1.3.72"
+    val kotlinVersion = "1.5.21"
 
 
     val constraintLayoutVersion = "2.0.4"
@@ -33,6 +33,7 @@ object DependencyVersions {
 
 
     const val timberVersion = "4.7.1"
+    const val pagingVersion = "3.0.0-alpha12"
 
 
 }
